@@ -11,9 +11,16 @@ body{
 }
 .header{
     display: grid;
-    grid-template: repeat(1, 1fr) / 5% 1fr;
+    grid-template: 1fr/ 5% 1fr;
     grid-template-areas: 
     "header__logo header__nav";
+    background-color: #000;
+    transition: 700ms;
+    width: 100%;
+    position: fixed;
+}
+.header:hover{
+    background-color: #fff;
 }
 .header__nav{
     grid-area:header__nav;
@@ -41,34 +48,47 @@ body{
 .header__logo{
     grid-area: header__logo;
 }
+@keyframes movement{
+    0%{
+        translate: 0px;
+    }
+    50%{
+        translate: 5px ;
+    }
+    100%{
+        translate: 0px;
+    }
+}
 .header__logo img{
     display: flex;
     width: 100%;
     margin-left: 0.5rem;
+    animation-name: movement;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    animation-duration: 2s;
 }
 .header__nav a {
     text-decoration: none;
     color: rgb(114, 116, 207); 
     font-size: 1rem;
-    position: fixed;
 }
 @media all and (max-width:992px){
     .header__nav a{
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
 @media all and (max-width:769px){
     .header__nav a{
-        font-size: 0.5rem;
-        margin: 0 -1rem;
+        font-size: 0.7rem;
     }
 }
 .hero{
     display: grid;
-    grid-template:1fr / repeat(2, 1fr) ;
+    grid-template: 1fr / repeat(2, 1fr) ;
     grid-template-areas:
     "hero__text hero__img";
-    margin: 2rem;
+    padding: 4rem;
 }
 @media all and (max-width:769px){
     .hero{
@@ -112,6 +132,7 @@ body{
     grid-area: hero__img;
     border-radius: 30px;
     width: 100%;
+    padding-top: 1rem;
 }
 .offerts{
     display: grid;
