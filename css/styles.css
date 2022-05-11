@@ -219,12 +219,18 @@ body{
     display: flex;
     justify-content:space-around;
     padding: 1rem;
-    }
+}
+.footer__contact__item{
+    transition: all 250ms;
+}
+.footer__contact_item:hover{
+    transform: scale(1.2);
+}
 .contact__instaLogo, .contact__faceLogo, .contact__whatsAppLogo{
     height: 60px;
     width: 60px;
     border-radius: 50%; 
-    }
+}
 .footer__bottom{
     grid-area: footer__bottom;
     display: flex;
@@ -234,9 +240,6 @@ body{
 .body__countries{
     background-image: url(../assets/train9.jpg);
     background-size: cover;
-}
-.body__countries a, p{
-    color: #fff;
 }
 .countries{
     display: grid;
