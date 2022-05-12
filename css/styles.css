@@ -136,7 +136,7 @@ body{
 }
 .offerts{
     display: grid;
-    grid-template:30% 1fr/ 1fr ;
+    grid-template:8% 1fr/ 1fr ;
     grid-template-areas:
     "offerts__header"
     "offerts__container";
