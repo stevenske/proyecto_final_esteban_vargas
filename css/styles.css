@@ -5,48 +5,8 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(../assets/train3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.header{
-    display: grid;
-    grid-template: 1fr/ 5% 1fr;
-    grid-template-areas: 
-    "header__logo header__nav";
-    background-color: #000;
-    transition: 700ms;
-    width: 100%;
-    position: fixed;
-}
-.header:hover{
-    background-color: #fff;
-}
-.header__nav{
-    grid-area:header__nav;
-    z-index: 100;
-}
-.header__nav ul{
-    display:flex;
-    height: 60px;
-    justify-content:space-around;
-    align-items: center;
-    font-family: 'Akshar', sans-serif;
-    list-style: none;
-}
-@media all and (max-width:992px){
-    .header__nav ul{
-        height: 50px;
-    }
-}
-@media all and (max-width:769px){
-    .header__nav ul{
-        height: 30px;
-        margin: 0 1rem;
-    }
-}
-.header__logo{
-    grid-area: header__logo;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
 }
 @keyframes movement{
     0%{
@@ -59,100 +19,38 @@ body{
         translate: 0px;
     }
 }
-.header__logo img{
-    display: flex;
-    width: 100%;
-    margin-left: 0.5rem;
+#header__logo img{
     animation-name: movement;
     animation-iteration-count: infinite;
     animation-timing-function:linear;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
-.header__nav a {
-    text-decoration: none;
-    color: rgb(114, 116, 207); 
-    font-size: 1rem;
-}
-@media all and (max-width:992px){
-    .header__nav a{
-        font-size: 0.9rem;
+#banner{
+    background-image: url(../assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    min-height: 60vh;
+} 
+@media all and (max-width:768px){
+    .bg-md-transparent{
+        background-color: #0000 !important;
     }
 }
-@media all and (max-width:769px){
-    .header__nav a{
-        font-size: 0.7rem;
-    }
+.zoom{
+    transition: 250ms;
 }
-.hero{
-    display: grid;
-    grid-template: 1fr / repeat(2, 1fr) ;
-    grid-template-areas:
-    "hero__text hero__img";
-    padding: 4rem;
+.zoom:hover{
+    transform: scale(1.1);
 }
-@media all and (max-width:769px){
-    .hero{
-        display: flex;
-        flex-direction: column;
-    }
-}
-.hero__text{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    grid-area: hero__text;
-    margin: 2rem;
-}
-@media all and (max-width:992px){
-    .hero__text{
-        font-size: 0.8rem;
-    }
-}
+
 @media all and (max-width:769px){
     .hero__text{
         font-size: 0.6rem;
     }
 }
-.hero__tittle{
-    font-weight: 700;
-    font-size: 2.7rem;
-    color: rgb(114, 116, 207);
-    line-height: 4rem;
-    font-family: 'Poppins', sans-serif;
-}
-@media all and (max-width:769px){
-    .hero__tittle{
-        font-size:2rem ;
-    }
-}
-.hero__text p{
-    color: rgb(255, 255, 255);
-}
-.hero__img img {
-    grid-area: hero__img;
-    border-radius: 30px;
-    width: 100%;
-    padding-top: 1rem;
-}
-.offerts{
-    display: grid;
-    grid-template:8% 1fr/ 1fr ;
-    grid-template-areas:
-    "offerts__header"
-    "offerts__container";
-}
-.offerts__header{
-    grid-area: offerts__header;
-    display: flex;
-    justify-content: center;
-    background-color:#000;
-    height: 40px;
-    font-size: 40px;
-    color: rgb(114, 116, 207);
-}
-.offerts__container{
-    grid-area: offerts__container;
-}
+
 .offerts__list{
     display: flex;
     justify-content:flex-start;
@@ -185,57 +83,6 @@ body{
     .offerts__list p{
         font-size: 0.6rem;
     }
-}
-.offerts__list input{
-    padding: 0 1rem;
-    background-color: rgb(114, 116, 207);
-    border-radius: 3px;
-    border: none;
-    cursor: pointer;
-}
-.footer{
-    display: grid;
-    grid-template: 1fr 1fr 1fr/ 1fr ;
-    grid-template-areas:
-    "footer__top"
-    "footer__contact"
-    "footer__bottom";
-    background-color:#000;
-    height: 200px;
-}
-.footer__top{
-    grid-area: footer__top;
-    background-color:rgba(114, 116, 207, 0.1);
-    height: 50px;
-}
-.footer__top p{
-    color: #fff;
-    padding: 1rem;
-    font-family:'Oswald', sans-serif;
-    text-decoration: underline;
-}
-.footer__contact{
-    grid-area: footer__contact;
-    display: flex;
-    justify-content:space-around;
-    padding: 1rem;
-}
-.footer__contact__item{
-    transition: all 250ms;
-}
-.footer__contact_item:hover{
-    transform: scale(1.2);
-}
-.contact__instaLogo, .contact__faceLogo, .contact__whatsAppLogo{
-    height: 60px;
-    width: 60px;
-    border-radius: 50%; 
-}
-.footer__bottom{
-    grid-area: footer__bottom;
-    display: flex;
-    color: #fff;
-    align-items: flex-end;
 }
 .body__countries{
     background-image: url(../assets/train9.jpg);

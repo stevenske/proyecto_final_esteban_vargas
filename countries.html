@@ -4,23 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Countries</title>
 </head>
 <body class="body__countries">
     <div>
-        <div class="header">
-            <div class="header__logo">
-                <a href="index.html"><img  src="assets/train.png" alt="logo train" a href="index.html"></a>
-            </div>
-            <div class="header__nav">
-                <ul>
-                    <li><a href="countries.html">Countries</a></li>
-                    <li><a href="plan_your_trip.html">Plan Your Trip</a></li>
-                    <li><a href="offerts.html">Offerts</a></li>
-                    <li><a href="contact_us.html">Contact Us</a></li>
-                </ul>
-            </div>
+        <div id="header" class="fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <div id="header__logo">
+                        <a class="navbar-brand" href="index.html"><img src="assets/train.png" alt="train icon" width="60px" ></a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="row collapse navbar-collapse text-center text-uppercase" id="navbarNav">
+                        <div id="navbar__sections" class="navbar-nav">
+                            <div class="nav-item col">
+                                <a class="nav-link zoom" aria-current="page" href="countries.html">Countries</a>
+                            </div>
+                            <div class="nav-item col">
+                                <a class="nav-link zoom" href="offerts.html">Offerts</a>
+                            </div>
+                            <div class="nav-item col">
+                                <a class="nav-link zoom" href="plan_your_trip.html">Plan Your Trip</a>
+                            </div>
+                            <div class="nav-item col">
+                                <a class="nav-link zoom" href="contact_us.html">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
         </div>
         <div class="countries">
                 <div class="countries__container"><iframe width="560" height="315" src="https://www.youtube.com/embed/sGK6nb-v53g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>Spain</p></div>
@@ -33,30 +49,39 @@
                 <div class="countries__container"><iframe width="560" height="315" src="https://www.youtube.com/embed/MXlFDpaQ1ec" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>Portugal</p></div>
                 <div class="countries__container"><iframe width="560" height="315" src="https://www.youtube.com/embed/P5oYtWDb8FM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><p>Austria</p></div>
         </div>
-        <div class="footer">
-            <div class="footer__top"><p>Get in touch:</p></div>
-                <div class="footer__contact">
-                    <div class="footer__contact_item">
-                        <a href="https://www.instagram.com" target="blank">
-                            <img class="contact__instaLogo" src="assets/instagram_logo.png" alt="logo of instagram">
-                        </a>
-                    </div>
-                    <div class="footer__contact_item">
-                        <a href="https://www.facebook.com" target="blank">
-                            <img class="contact__faceLogo" src="assets/facebook_logo.png" alt="logo of facebook">
-                        </a>
-                    </div>
-                    <div class="footer__contact_item">
-                    <a href="https://web.whatsapp.com" target="blank">
-                        <img class="contact__whatsAppLogo" src="assets/whatsapp_logo.png" alt="logo of whatsapp">
-                    </a>
-                    </div>
-                </div>
-            <div class="footer__bottom">
-                <p>website created by Esteban Vargas.</p>
+        <div id="footer">
+            <div class="bg-light">
+                <footer class="py-3 border-top">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                        <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+                        <li class="nav-item"><a href="countries.html" class="nav-link px-2 text-muted">Countries</a></li>
+                        <li class="nav-item"><a href="offerts.html" class="nav-link px-2 text-muted">Offerts</a></li>
+                        <li class="nav-item"><a href="plan_your_trip.html" class="nav-link px-2 text-muted">Plan Your Trip</a></li>
+                        <li class="nav-item"><a href="contact_us.html" class="nav-link px-2 text-muted">Contact Us</a></li>
+                    </ul>
+                    <p class="text-center text-muted">© 2022 TrainTrip, INC</p>
+                    <div class="container d-flex justify-content-around">
+                        <div>
+                            <a href="https://www.facebook.com" target="_blank">
+                                <img class="zoom" src="./assets/icon_facebook.png" alt="logo of facebook">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://www.instagram.com" target="_blank">
+                                <img class="zoom" src="./assets/icon_instagram.png" alt="logo of instagram">
+                            </a>
+                        </div>
+                        <div>
+                            <a href="https://twitter.com" target="_blank">
+                                <img class="zoom" src="./assets/icon_twitter.png" alt="logo of twitter">
+                            </a>
+                        </div>
+                    </div> 
+                </footer>
             </div>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
 
