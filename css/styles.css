@@ -84,54 +84,17 @@ body{
         font-size: 0.6rem;
     }
 }
-.body__countries{
-    background-image: url(../assets/train9.jpg);
+#banner__countries{
+    background-image: url(../assets/banner_countries.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    height: 500px;
+    min-height: 60vh;
 }
-.countries{
-    display: grid;
-    grid-template: repeat(3,1fr) / repeat(3,1fr);
-    grid-template-areas:
-    "countries__container countries__container countries__container"
-    "countries__container countries__container countries__container"
-    "countries__container countries__container countries__container"
-    ;
-}
-.countries__container{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1rem;
-}
-.countries__container iframe{
-    border: 1px solid rgb(60, 62, 182);
-    border-radius: 5px;
-    width: 60%;
-    height: 300px;
-}
-@media all and (max-width:992px){
-    .countries__container iframe{
-        height: 100%;
-    }
-}
-@media all and (max-width:769px){
-    .countries__container iframe{
-        height: 40%;
-    }
-}
-.countries__container p{  
-    font-size: 1rem;
-    margin-bottom: 3rem;
-}
-@media all and (max-width:992px){
-    .countries__container p{
-        font-size: 0.8rem;
-    }
-}
-@media all and (max-width:769px){
-    .countries__container p{
-        font-size: 0.7rem;
-    }
+
+.h-iframe{
+    height:18rem ;
 }
 .body__planYourTrip{
     background-image: url(../assets/train10.jpg);
