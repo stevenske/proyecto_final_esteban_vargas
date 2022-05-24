@@ -44,13 +44,11 @@ body{
 .zoom:hover{
     transform: scale(1.1);
 }
-
 @media all and (max-width:769px){
     .hero__text{
         font-size: 0.6rem;
     }
 }
-
 .offerts__list{
     display: flex;
     justify-content:flex-start;
@@ -92,7 +90,6 @@ body{
     height: 500px;
     min-height: 60vh;
 }
-
 .h-iframe{
     height:18rem ;
 }
