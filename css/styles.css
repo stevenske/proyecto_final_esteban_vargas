@@ -44,39 +44,6 @@ body{
 .zoom:hover{
     transform: scale(1.1);
 }
-.offerts__list{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    list-style: none;
-    margin: 2rem;
-}
-.offerts__list img{
-    border-radius: 5px;
-    width: 15%;
-    border: 1px solid rgb(60, 62, 182);
-}
-.offerts__list p{
-    color: #fff;
-    font-size: 1rem;
-    padding: 1rem;
-    margin: 1rem;
-    width: 50%;
-    border: 1px solid rgb(60, 62, 182);
-    border-radius: 5px;
-    text-align: center;   
-    background-color: #000;
-}
-@media all and (max-width:992px){
-    .offerts__list p{
-        font-size: 0.8rem;
-    }
-}
-@media all and (max-width:769px){
-    .offerts__list p{
-        font-size: 0.6rem;
-    }
-}
 #banner__countries{
     background-image: url(../assets/banner_countries.jpg);
     background-repeat: no-repeat;
