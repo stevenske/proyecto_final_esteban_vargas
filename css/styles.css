@@ -44,11 +44,6 @@ body{
 .zoom:hover{
     transform: scale(1.1);
 }
-@media all and (max-width:769px){
-    .hero__text{
-        font-size: 0.6rem;
-    }
-}
 .offerts__list{
     display: flex;
     justify-content:flex-start;
