@@ -70,6 +70,10 @@ body {
   transform: scale(1.1);
 }
 
+.btn-train {
+  background-color: #779ff6;
+}
+
 #banner__countries {
   background-image: url(../assets/banner_countries.jpg);
   background-repeat: no-repeat;
