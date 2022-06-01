@@ -9,13 +9,13 @@ body{
 }
 @keyframes movement{
     0%{
-        translate: 0px;
+        transform:translate(0px);
     }
     50%{
-        translate: 5px ;
+        transform:translate(5px);
     }
     100%{
-        translate: 0px;
+        transform:translate(0px);
     }
 }
 #header__logo img{
