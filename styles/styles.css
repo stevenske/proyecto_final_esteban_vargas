@@ -78,6 +78,19 @@ body {
   height: 18rem;
 }
 
+#banner__offerts {
+  background-image: url(../assets/train11.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  min-height: 60vh;
+}
+@media all and (max-width: 768px) {
+  #banner__offerts {
+    background-position: 80% center;
+  }
+}
+
 .body__planYourTrip {
   background-image: url(../assets/train10.jpg);
   background-size: cover;
@@ -152,19 +165,6 @@ body {
   .container__map, iframe {
     width: 80%;
     height: 80%;
-  }
-}
-
-#banner__offerts {
-  background-image: url(../assets/train11.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  min-height: 60vh;
-}
-@media all and (max-width: 768px) {
-  #banner__offerts {
-    background-position: 80% center;
   }
 }
 
