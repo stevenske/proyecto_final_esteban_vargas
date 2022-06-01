@@ -1,72 +1,10 @@
-.body__contactUs{
-    background-image: url(../assets/pexels-trace-hudson-2365701.jpg);
-    background-size: 300px;
-    background-repeat: repeat;
+#banner__contactUs{
+    background-image: url(../assets/banner_contact_us.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 400px;
 }
-.container__contactUs{
-    display: grid;
-    grid-template: 200px 200px 1fr/ 1fr 1fr 1fr;
-    grid-template-areas:
-    ". . ."
-    ". container__contactInformation ."
-    ". container__form ."
-    ;
-}
-.container__contactInformation{
-    grid-area: container__contactInformation;
-    text-align: center;
-    color:#fff ;
-    border-radius: 4%;
-    background-color: #000;
-    margin: 1rem;
-    @media all and (max-width:768px){
-        width: 300px;
-        margin: 0.5rem;
-    }
-}
-.container__contactHeader{
-    font-size: 2rem;
-    color: rgb(114, 116, 207);
-    line-height: 4rem;
-    @media all and (max-width:768px){
-        line-height: 3rem;
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-    }
-}
-.container__form{
-    grid-area: container__form;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #fff;
-    background-color: #000;
-    border-radius: 5px;
-    margin: 0 1rem 2rem 1rem;
-    @media all and (max-width:768px){
-        width: 300px;
-        font-size: 0.8rem;
-        margin: 0.5rem;
-    }
-    input{
-        margin: 0.5rem;
-        background-color: $main_color;
-        border-style: none;
-        border-radius: 3px;
-        color: #000;
-    }
-    #container__textarea{
-        @media all and (max-width:768px){
-            width: 300px;
-            margin: 0.5rem;
-        }
-    }
-}
-.container__button{
-    input{
-        background-color: $main_color;
-        cursor: pointer;
-        padding: 0.3rem 1rem;
-        color: #fff;
-    }
+#contact__networks a:hover{
+    color: #000;
 }
