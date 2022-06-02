@@ -49,7 +49,7 @@ body {
   width: 10%;
 }
 
-#banner {
+#banner, #banner__countries {
   background-image: url(../assets/banner.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -76,41 +76,27 @@ body {
 
 #banner__countries {
   background-image: url(../assets/banner_countries.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  min-height: 60vh;
 }
 
 .h-iframe {
   height: 18rem;
 }
 
-#banner__offerts {
+#banner__offerts, #banner__plan_your_trip {
   background-image: url(../assets/banner_offerts.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-  min-height: 60vh;
-}
-@media all and (max-width: 768px) {
-  #banner__offerts {
-    background-position: 80% center;
-  }
-}
-
-#banner__plan_your_trip {
-  background-image: url(../assets/banner_plan_your_trip.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
   min-height: 40vh;
 }
 @media all and (max-width: 768px) {
-  #banner__plan_your_trip {
+  #banner__offerts, #banner__plan_your_trip {
     background-position: 80% center;
   }
+}
+
+#banner__plan_your_trip {
+  background-image: url(../assets/banner_plan_your_trip.jpg);
 }
 
 .bg-gray {

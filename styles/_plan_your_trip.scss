@@ -1,12 +1,6 @@
 #banner__plan_your_trip{
     background-image: url(../assets/banner_plan_your_trip.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    min-height: 40vh;
-    @media all and (max-width:768px){
-        background-position: 80% center;
-    }
+    @extend #banner__offerts
 }
 .bg-gray{
     background-color: rgb(219, 219, 219);

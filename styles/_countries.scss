@@ -1,10 +1,6 @@
 #banner__countries{
     background-image: url(../assets/banner_countries.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    min-height: 60vh;
+    @extend #banner;
 }
 .h-iframe{
     height:18rem ;
