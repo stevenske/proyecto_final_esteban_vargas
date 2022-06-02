@@ -8,29 +8,30 @@
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
+  color: #90b1f7;
 }
 
 @-webkit-keyframes movement {
   0% {
-    translate: 0px;
+    transform: translate(0px);
   }
   50% {
-    translate: 5px;
+    transform: translate(5px);
   }
   100% {
-    translate: 0px;
+    transform: translate(0px);
   }
 }
 
 @keyframes movement {
   0% {
-    translate: 0px;
+    transform: translate(0px);
   }
   50% {
-    translate: 5px;
+    transform: translate(5px);
   }
   100% {
-    translate: 0px;
+    transform: translate(0px);
   }
 }
 #header__logo img {
@@ -44,13 +45,17 @@ body {
           animation-duration: 1s;
 }
 
+.w-10 {
+  width: 10%;
+}
+
 #banner {
   background-image: url(../assets/banner.jpg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   height: 500px;
   min-height: 60vh;
+  background-position: center;
 }
 
 @media all and (max-width: 768px) {
@@ -65,258 +70,71 @@ body {
   transform: scale(1.1);
 }
 
+.btn-train {
+  background-color: #779ff6;
+}
+
 #banner__countries {
   background-image: url(../assets/banner_countries.jpg);
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
   height: 500px;
   min-height: 60vh;
+  background-position: center;
 }
 
 .h-iframe {
   height: 18rem;
 }
 
-.body__planYourTrip {
-  background-image: url(../assets/train10.jpg);
+#banner__offerts, #banner__plan_your_trip {
+  background-image: url(../assets/banner_offerts.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-}
-
-.container__hero {
-  display: grid;
-  grid-template: 1fr 300px/1fr 2fr 1fr;
-  grid-template-areas: ". container__trip .";
+  height: 400px;
+  min-height: 40vh;
 }
 @media all and (max-width: 768px) {
-  .container__hero {
-    grid-template: 1fr 200px/1fr 2fr 1fr;
-    grid-template-areas: ". container__trip .";
+  #banner__offerts, #banner__plan_your_trip {
+    background-position: 80% center;
   }
 }
 
-.container__trip {
-  grid-area: container__trip;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: #000;
-  border-radius: 3%;
-  margin: 1rem;
-  margin-top: 5rem;
+#banner__plan_your_trip {
+  background-image: url(../assets/banner_plan_your_trip.jpg);
+}
+
+.bg-gray {
+  background-color: rgb(219, 219, 219);
+}
+
+.border-plan {
+  border: 1px solid #000;
 }
 @media all and (max-width: 768px) {
-  .container__trip {
-    width: 300px;
-    margin: 0;
-    margin-top: 5rem;
+  .border-plan {
+    border: 0;
   }
 }
 
-.container__tittle {
-  font-family: "Oswald", sans-serif;
-  font-size: 3rem;
-  color: #fff;
-}
-@media all and (max-width: 768px) {
-  .container__tittle {
-    font-size: 2rem;
-  }
-}
-
-.container__input {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.container__input input {
-  color: #fff;
-  background-color: rgb(59, 59, 59);
-  border: none;
-  margin: 2rem;
-  padding: 1rem 2rem;
+#map, iframe {
   border-radius: 5px;
 }
 @media all and (max-width: 768px) {
-  .container__input input {
-    font-size: 0.8rem;
-    padding: 0.5rem 1rem;
+  #map, iframe {
+    width: 100%;
   }
 }
 
-.container__map, iframe {
-  border-radius: 5px;
-  margin: 1rem;
-}
-@media all and (max-width: 769px) {
-  .container__map, iframe {
-    width: 80%;
-    height: 80%;
-  }
-}
-
-.body__offerts {
-  background-image: url(../assets/train8.jpg);
+#banner__contactUs {
+  background-image: url(../assets/banner_contact_us.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+  height: 500px;
+  min-height: 60vh;
+  background-position: bottom;
 }
 
-.offertsMain {
-  display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto;
-  grid-template-areas: "offertsMain__header" "offertsMain__list" "offertsMain__list2" "offertsMain__list3" "offertsMain__list4";
-}
-.offertsMain img {
-  border-radius: 5px;
-  width: 15%;
-  border: 1px solid rgb(114, 116, 207);
-}
-@media all and (max-width: 768px) {
-  .offertsMain img {
-    width: 40%;
-  }
-}
-.offertsMain p {
-  color: #fff;
-  font-size: 1rem;
-  padding: 1rem;
-  margin: 1rem;
-  width: 50%;
-  border: 1px solid rgb(114, 116, 207);
-  border-radius: 5px;
-  text-align: center;
-  background-color: #000;
-}
-@media all and (max-width: 768px) {
-  .offertsMain p {
-    font-size: 0.6rem;
-    padding: 0.5rem;
-  }
-}
-.offertsMain input {
-  padding: 0 1rem;
-  background-color: rgb(114, 116, 207);
-  border-radius: 3px;
-  border: none;
-  cursor: pointer;
-}
-.offertsMain__list {
-  grid-area: offertsMain__list;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  list-style: none;
-  margin: 2rem;
-}
-.offertsMain__list2 {
-  grid-area: offertsMain__list2;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  list-style: none;
-  margin: 2rem;
-}
-.offertsMain__list3 {
-  grid-area: offertsMain__list3;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  list-style: none;
-  margin: 2rem;
-}
-.offertsMain__list4 {
-  grid-area: offertsMain__list4;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  list-style: none;
-  margin: 2rem;
-}
-.offertsMain__header {
-  grid-area: offertsMain__header;
-  display: flex;
-  justify-content: center;
-  background-color: #000;
-  height: 40px;
-  font-size: 40px;
-  color: rgb(114, 116, 207);
-  margin-top: 4rem;
-}
-
-.body__contactUs {
-  background-image: url(../assets/pexels-trace-hudson-2365701.jpg);
-  background-size: 300px;
-  background-repeat: repeat;
-}
-
-.container__contactUs {
-  display: grid;
-  grid-template: 200px 200px 1fr/1fr 1fr 1fr;
-  grid-template-areas: ". . ." ". container__contactInformation ." ". container__form .";
-}
-
-.container__contactInformation {
-  grid-area: container__contactInformation;
-  text-align: center;
-  color: #fff;
-  border-radius: 4%;
-  background-color: #000;
-  margin: 1rem;
-}
-@media all and (max-width: 768px) {
-  .container__contactInformation {
-    width: 300px;
-    margin: 0.5rem;
-  }
-}
-
-.container__contactHeader {
-  font-size: 2rem;
-  color: rgb(114, 116, 207);
-  line-height: 4rem;
-}
-@media all and (max-width: 768px) {
-  .container__contactHeader {
-    line-height: 3rem;
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-  }
-}
-
-.container__form {
-  grid-area: container__form;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #fff;
-  background-color: #000;
-  border-radius: 5px;
-  margin: 0 1rem 2rem 1rem;
-}
-@media all and (max-width: 768px) {
-  .container__form {
-    width: 300px;
-    font-size: 0.8rem;
-    margin: 0.5rem;
-  }
-}
-.container__form input {
-  margin: 0.5rem;
-  background-color: rgb(114, 116, 207);
-  border-style: none;
-  border-radius: 3px;
+#contact__networks a:hover {
   color: #000;
-}
-@media all and (max-width: 768px) {
-  .container__form #container__textarea {
-    width: 300px;
-    margin: 0.5rem;
-  }
-}
-
-.container__button input {
-  background-color: rgb(114, 116, 207);
-  cursor: pointer;
-  padding: 0.3rem 1rem;
-  color: #fff;
 }/*# sourceMappingURL=styles.css.map */

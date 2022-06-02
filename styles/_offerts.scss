@@ -1,88 +1,10 @@
-.body__offerts{
-    background-image: url(../assets/train8.jpg);
+#banner__offerts{
+    background-image: map-get($banners-img , banner_offerts );
+    background-repeat: no-repeat;
     background-size: cover;
-}
-.offertsMain{
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "offertsMain__header"
-    "offertsMain__list"
-    "offertsMain__list2"
-    "offertsMain__list3"
-    "offertsMain__list4"
-    ;
-    img{
-        border-radius: 5px;
-        width: 15%;
-        border: 1px solid $main_color;
-        @media all and (max-width:768px){
-            width: 40%;
-        }
-    }
-    p{
-        color: #fff;
-        font-size: 1rem;
-        padding: 1rem;
-        margin: 1rem;
-        width: 50%;
-        border: 1px solid $main_color;
-        border-radius: 5px;
-        text-align: center;   
-        background-color: #000;
-        @media all and (max-width:768px){
-            font-size: 0.6rem;
-            padding: 0.5rem;
-        }    
-    }
-    input{
-        padding: 0 1rem;
-        background-color: $main_color;
-        border-radius: 3px;
-        border: none;
-        cursor: pointer;
-    }
-    &__list{
-        grid-area: offertsMain__list;
-        display: flex;
-        justify-content:flex-start;
-        align-items: center;
-        list-style: none;
-        margin: 2rem;
-    }
-    &__list2{
-        grid-area: offertsMain__list2;
-        display: flex;
-        justify-content:flex-start;
-        align-items: center;
-        list-style: none;
-        margin: 2rem;
-    }
-    &__list3{
-        grid-area: offertsMain__list3;
-        display: flex;
-        justify-content:flex-start;
-        align-items: center;
-        list-style: none;
-        margin: 2rem;
-    }
-    &__list4{
-        grid-area: offertsMain__list4;
-        display: flex;
-        justify-content:flex-start;
-        align-items: center;
-        list-style: none;
-        margin: 2rem;
-    }
-    &__header{
-        grid-area: offertsMain__header;
-        display: flex;
-        justify-content: center;
-        background-color:#000;
-        height: 40px;
-        font-size: 40px;
-        color: rgb(114, 116, 207);
-        margin-top: 4rem;
+    height: 400px;
+    min-height: 40vh;
+    @media all and (max-width:768px){
+        background-position: 80% center;
     }
 }

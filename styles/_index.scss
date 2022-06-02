@@ -6,16 +6,17 @@
 body{
     font-family: 'Ubuntu', sans-serif;
     font-weight: 700;
+    color: $main_color;
 }
 @keyframes movement{
     0%{
-        translate: 0px;
+        transform:translate(0px);
     }
     50%{
-        translate: 5px ;
+        transform:translate(5px);
     }
     100%{
-        translate: 0px;
+        transform:translate(0px);
     }
 }
 #header__logo img{
@@ -24,13 +25,12 @@ body{
     animation-timing-function:linear;
     animation-duration: 1s;
 }
+.w-10{
+    width: 10%;
+}
 #banner{
-    background-image: url(../assets/banner.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    min-height: 60vh;
+    background-image: map-get($banners-img, banner);
+    @include banners-position(center)    
 } 
 @media all and (max-width:768px){
     .bg-md-transparent{
@@ -42,4 +42,7 @@ body{
     &:hover{
         transform: scale(1.1);
     }
+}
+.btn-train{
+    background-color:$btn_color;
 }
