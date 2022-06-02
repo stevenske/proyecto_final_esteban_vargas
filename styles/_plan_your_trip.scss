@@ -1,5 +1,5 @@
 #banner__plan_your_trip{
-    background-image: url(../assets/banner_plan_your_trip.jpg);
+    background-image: map-get($banners-img, banner_plan_your_trip );
     @extend #banner__offerts
 }
 .bg-gray{

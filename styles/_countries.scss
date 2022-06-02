@@ -1,6 +1,8 @@
 #banner__countries{
-@include banners(url(../assets/banner_countries.jpg),center)
+    background-image: map-get($banners-img, banner_countries );
+    @include banners-position(center);
 }
+
 .h-iframe{
     height:18rem ;
 }

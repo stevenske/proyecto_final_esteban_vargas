@@ -50,11 +50,11 @@ body {
 }
 
 #banner {
+  background-image: url(../assets/banner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
   min-height: 60vh;
-  background-image: url(../assets/banner.jpg);
   background-position: center;
 }
 
@@ -75,11 +75,11 @@ body {
 }
 
 #banner__countries {
+  background-image: url(../assets/banner_countries.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
   min-height: 60vh;
-  background-image: url(../assets/banner_countries.jpg);
   background-position: center;
 }
 
@@ -127,11 +127,11 @@ body {
 }
 
 #banner__contactUs {
+  background-image: url(../assets/banner_contact_us.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
   min-height: 60vh;
-  background-image: url(../assets/banner_contact_us.jpg);
   background-position: bottom;
 }
 

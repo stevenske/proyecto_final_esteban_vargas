@@ -1,9 +1,8 @@
-@mixin banners ($banner-img, $position){
+@mixin banners-position ($position){
     background-repeat: no-repeat;
     background-size: cover;
     height: 500px;
     min-height: 60vh;
-    background-image: $banner-img;
     background-position: $position ;
 
 }

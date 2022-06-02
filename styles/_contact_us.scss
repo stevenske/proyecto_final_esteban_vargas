@@ -1,5 +1,6 @@
 #banner__contactUs{
-    @include banners (url(../assets/banner_contact_us.jpg),bottom)
+    background-image: map-get($banners-img , banner__contac_us);
+    @include banners-position (bottom)
 }
 #contact__networks a:hover{
     color: #000;

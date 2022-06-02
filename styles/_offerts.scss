@@ -1,5 +1,5 @@
 #banner__offerts{
-    background-image: url(../assets/banner_offerts.jpg);
+    background-image: map-get($banners-img , banner_offerts );
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
