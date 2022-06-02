@@ -29,12 +29,7 @@ body{
     width: 10%;
 }
 #banner{
-    background-image: url(../assets/banner.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 500px;
-    min-height: 60vh;
+    @include banners(url(../assets/banner.jpg),center)    
 } 
 @media all and (max-width:768px){
     .bg-md-transparent{

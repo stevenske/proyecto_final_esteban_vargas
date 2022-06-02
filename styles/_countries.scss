@@ -1,6 +1,5 @@
 #banner__countries{
-    background-image: url(../assets/banner_countries.jpg);
-    @extend #banner;
+@include banners(url(../assets/banner_countries.jpg),center)
 }
 .h-iframe{
     height:18rem ;

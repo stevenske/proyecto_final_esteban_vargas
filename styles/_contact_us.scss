@@ -1,9 +1,5 @@
 #banner__contactUs{
-    background-image: url(../assets/banner_contact_us.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    min-height: 400px;
+    @include banners (url(../assets/banner_contact_us.jpg),bottom)
 }
 #contact__networks a:hover{
     color: #000;
