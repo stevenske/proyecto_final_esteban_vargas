@@ -3,13 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="In this website you can make your own train trip throughout Europe">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Home</title>
 </head>
 <body>
-    <div id="header" class="fixed-top">
+    <header id="header" class="fixed-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
                 <div id="header__logo" class="w-10">
@@ -36,7 +37,7 @@
                 </div>
             </div>
         </nav>
-    </div>
+    </header>
     <div id="banner" class="d-flex align-items-end pb-4">
         <div class="rounded mx-auto py-4 bg-black bg-opacity-75 bg-md-transparent">
             <div class="container-fluid row">
@@ -75,7 +76,7 @@
             <div class="card text-center shadow-lg" style="width: 18rem;">
                 <img src="assets/coliseo_roma.jpg" class="card-img-top rounded zoom" alt="photo of the Colosseum in Rome">
                 <div class="card-body">
-                    <h5 class="card-title">Rome</h5>
+                    <p class="card-title fs-5">Rome</p>
                     <p class="card-text">Visit the Colosseum in Rome with a direct train trip</p>
                     <button type="submit" class="btn btn-train fw-bold" data-bs-toggle="modal" data-bs-target="#soldOut">BUY</button>
                 </div>
@@ -85,7 +86,7 @@
             <div class="card text-center shadow-lg" style="width: 18rem;">
                 <img src="assets/paris.jpg" class="card-img-top rounded zoom" alt="Tourist photo at the Louvre Pyramid in Paris">
                 <div class="card-body">
-                    <h5 class="card-title">Paris</h5>
+                    <p class="card-title fs-5">Paris</p>
                     <p class="card-text">Visit the Louvre Pyramid in Paris with a direct train trip</p>
                     <button type="submit" class="btn btn-train fw-bold" data-bs-toggle="modal" data-bs-target="#soldOut">BUY</button>
                 </div>
@@ -95,7 +96,7 @@
             <div class="card text-center shadow-lg" style="width: 18rem;">
                 <img src="assets/amsterdam.jpg" class="card-img-top rounded zoom" alt="amsterdam canals photo">
                 <div class="card-body">
-                    <h5 class="card-title">Amsterdam</h5>
+                    <p class="card-title fs-5">Amsterdam</p>
                     <p class="card-text">Visit Amsterdam with a direct train trip</p>
                     <button type="submit" class="btn btn-train fw-bold" data-bs-toggle="modal" data-bs-target="#soldOut">BUY</button>
                 </div>
@@ -137,7 +138,7 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="soldOutLabel">All tickets sold out</h5>
+                    <p class="modal-title fs-5" id="soldOutLabel">All tickets sold out</p>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
