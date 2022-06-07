@@ -5,5 +5,12 @@ $banners-img:(
     banner_countries:url(../assets/banner_countries.jpg),
     banner_offerts:url(../assets/banner_offerts.jpg),
     banner_plan_your_trip:url(../assets/banner_plan_your_trip.jpg),
-    banner__contac_us:url(../assets/banner_contact_us.jpg),
+    banner_contact_us:url(../assets/banner_contact_us.jpg)
+);
+$banners-img-768:(
+    banner-768: url(../assets/banner-768.jpg),
+    banner_countries-768:url(../assets/banner_countries-768.jpg),
+    banner_offerts-768:url(../assets/banner_offerts-768.jpg),
+    banner_plan_your_trip-768:url(../assets/banner_plan_your_trip-768.jpg),
+    banner_contact_us-768:url(../assets/banner_contact_us.jpg)
 );
