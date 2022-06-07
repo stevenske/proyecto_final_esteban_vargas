@@ -74,6 +74,10 @@ body {
   background-color: #779ff6;
 }
 
+.text-main {
+  color: #90b1f7;
+}
+
 #banner__countries {
   background-image: url(../assets/banner_countries.jpg);
   background-repeat: no-repeat;
