@@ -57,6 +57,11 @@ body {
   min-height: 60vh;
   background-position: center;
 }
+@media all and (max-width: 768px) {
+  #banner {
+    background-image: url(../assets/banner-768.jpg);
+  }
+}
 
 @media all and (max-width: 768px) {
   .bg-md-transparent {
@@ -86,6 +91,11 @@ body {
   min-height: 60vh;
   background-position: center;
 }
+@media all and (max-width: 768px) {
+  #banner__countries {
+    background-image: url(../assets/banner_countries-768.jpg);
+  }
+}
 
 .h-iframe {
   height: 18rem;
@@ -100,12 +110,19 @@ body {
 }
 @media all and (max-width: 768px) {
   #banner__offerts, #banner__plan_your_trip {
+    background-image: url(../assets/banner_offerts-768.jpg);
     background-position: 80% center;
   }
 }
 
 #banner__plan_your_trip {
   background-image: url(../assets/banner_plan_your_trip.jpg);
+}
+@media all and (max-width: 768px) {
+  #banner__plan_your_trip {
+    background-image: url(../assets/banner_plan_your_trip-768.jpg);
+    background-position: center;
+  }
 }
 
 .bg-gray {
@@ -137,6 +154,11 @@ body {
   height: 500px;
   min-height: 60vh;
   background-position: bottom;
+}
+@media all and (max-width: 768px) {
+  #banner__contactUs {
+    background-image: url(../assets/banner_contact_us.jpg);
+  }
 }
 
 #contact__networks a {
