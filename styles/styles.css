@@ -101,15 +101,16 @@ body {
   height: 18rem;
 }
 
-#banner__offerts, #banner__plan_your_trip {
+#banner__offerts {
   background-image: url(../assets/banner_offerts.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 400px;
-  min-height: 40vh;
+  height: 500px;
+  min-height: 60vh;
+  background-position: top;
 }
 @media all and (max-width: 768px) {
-  #banner__offerts, #banner__plan_your_trip {
+  #banner__offerts {
     background-image: url(../assets/banner_offerts-768.jpg);
     background-position: 80% center;
   }
@@ -117,6 +118,11 @@ body {
 
 #banner__plan_your_trip {
   background-image: url(../assets/banner_plan_your_trip.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  min-height: 60vh;
+  background-position: center;
 }
 @media all and (max-width: 768px) {
   #banner__plan_your_trip {

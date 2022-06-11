@@ -30,10 +30,10 @@ body{
 }
 #banner{
     background-image: map-get($banners-img, banner);
+    @include banners-position(center);
     @media all and (max-width:768px){
         background-image: map-get($banners-img-768 , banner-768);
     }
-    @include banners-position(center)    
 } 
 @media all and (max-width:768px){
     .bg-md-transparent{
