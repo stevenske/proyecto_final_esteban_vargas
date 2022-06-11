@@ -159,7 +159,7 @@ body {
   background-size: cover;
   height: 500px;
   min-height: 60vh;
-  background-position: bottom;
+  background-position: top;
 }
 @media all and (max-width: 768px) {
   #banner__contactUs {
