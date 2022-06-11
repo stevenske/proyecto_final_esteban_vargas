@@ -1,9 +1,6 @@
 #banner__offerts{
     background-image: map-get($banners-img , banner_offerts );
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 400px;
-    min-height: 40vh;
+    @include banners-position(top);
     @media all and (max-width:768px){
         background-image: map-get($banners-img-768, banner_offerts-768 );
         background-position: 80% center;
